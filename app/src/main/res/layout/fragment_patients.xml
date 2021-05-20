@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_patient_details"
+                android:id="@+id/text_view_header"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/text_view_header"
+                android:layout_marginTop="12dp"
+                android:id="@+id/header_line"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_centerType"
+                android:background="@drawable/spinner_background"
+                android:layout_below="@id/header_line"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:contextClickable="false"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_centerType"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_background"
+                android:id="@+id/spinner_center"
+                android:clickable="false"
+                android:contextClickable="false"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/name_layout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_name"
+                    android:inputType="textCapWords"
+                    android:hint="@string/patient_name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_layout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/number_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/patient_number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/number_layout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/adhaar_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_adhaar"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:id="@+id/patient_adhaar"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adhaar_layout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/address_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_address"
+                    android:inputType="textCapSentences"
+                    android:id="@+id/patient_address"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_gender"
+                android:layout_marginTop="20dp"
+                android:id="@+id/age_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_age"
+                    android:inputType="number"
+                    android:id="@+id/patient_age"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/age_layout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/date_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_date"
+                    android:inputType="date"
+                    android:id="@+id/patient_date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patient_diseases_layout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/remark_layout">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/patient_remark"
+                    android:inputType="textCapWords"
+                    android:id="@+id/patient_remark"
+                    android:completionThreshold="0"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:textStyle="bold"
+                android:layout_below="@id/address_layout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_view_gender"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_gender"
+                android:layout_below="@id/text_view_gender"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_man"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/rb_male"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    android:drawableTop="@drawable/ic_woman"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/rb_female"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_done"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:textStyle="bold"
+                android:layout_below="@id/date_layout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_view_tests"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_tests"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/date_layout"
+                android:layout_toEndOf="@id/text_view_tests"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:id="@+id/rb_yes"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:id="@+id/rb_no"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_tests"
+                android:layout_marginTop="20dp"
+                android:id="@+id/patient_test_layout"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tests_done"
+                    android:id="@+id/patient_test"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/patient_diseases_layout"
+                android:layout_below="@id/patient_test_layout"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/any_other_diseases"
+                    android:id="@+id/patient_diseases"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_provide_ages"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/text_age_dialog_heading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_age_dialog_heading"
+        android:layout_marginTop="20dp"
+        android:hint="@string/from_age"
+        android:inputType="number"
+        android:id="@+id/editTextFromAge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFromAge"
+        android:layout_marginTop="20dp"
+        android:hint="@string/to_age"
+        android:inputType="number"
+        android:id="@+id/editTextToAge"/>
+
+
+</RelativeLayout>

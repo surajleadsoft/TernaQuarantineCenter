@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/application_contribution"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/text_heading"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/text_heading"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_abhishek"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/text_heading"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/red_line"
+                    android:id="@+id/red_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/technical_contribution"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/text_heading1"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_heading1"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:contentDescription="@string/abhishek_profile"
+                        android:layout_height="120dp"
+                        android:src="@drawable/abhi"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/image_profile_card_1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abhishek"
+                        android:layout_toEndOf="@id/image_profile_card_1"
+                        android:layout_marginStart="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/card_1_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pass_out_year_2020"
+                        android:id="@+id/text_pass_out_year"
+                        android:layout_toEndOf="@id/image_profile_card_1"
+                        android:layout_marginTop="05dp"
+                        android:layout_below="@id/card_1_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_pass_out_year"
+                        android:layout_toEndOf="@id/image_profile_card_1"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/abhishek_contribution"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/text_card_1_contribution"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card_1_sponsored_by"
+                        android:layout_below="@id/text_card_1_contribution"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:text="@string/abhi_sponsored_by"
+                        android:textAlignment="center"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_leadsoft"
+            android:layout_below="@id/card_abhishek"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/red_line"
+                    android:id="@+id/red_view_card_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/technical_contribution"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/text_heading2"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_heading2"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:contentDescription="@string/leadsoft_profile"
+                        android:layout_height="120dp"
+                        android:src="@drawable/suraj_pawar"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/image_profile_card_2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/suraj"
+                        android:layout_toEndOf="@id/image_profile_card_2"
+                        android:layout_marginStart="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/card_2_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/managing_director"
+                        android:id="@+id/text_position"
+                        android:layout_toEndOf="@id/image_profile_card_2"
+                        android:layout_marginTop="05dp"
+                        android:layout_below="@id/card_2_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_position"
+                        android:layout_toEndOf="@id/image_profile_card_2"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/abhishek_contribution"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/text_card_2_contribution"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card_2_sponsored_by"
+                        android:layout_below="@id/text_card_2_contribution"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:text="@string/abhi_sponsored_by"
+                        android:textAlignment="center"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_VVMane"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/card_leadsoft"
+            app:cardElevation="10dp"
+            android:layout_marginTop="20dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/blue_line"
+                    android:id="@+id/blue_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/informative_contribution"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/text_heading3"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_heading3"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:contentDescription="@string/vikramsinha_mane_profile"
+                        android:layout_height="120dp"
+                        android:src="@drawable/vikram_mane"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/image_profile_card_3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vikramsinha_mane"
+                        android:layout_toEndOf="@id/image_profile_card_3"
+                        android:layout_marginStart="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/card_3_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/principal"
+                        android:id="@+id/text_position_2"
+                        android:layout_toEndOf="@id/image_profile_card_3"
+                        android:layout_marginTop="05dp"
+                        android:layout_below="@id/card_3_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_position_2"
+                        android:layout_toEndOf="@id/image_profile_card_3"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/principal_contribution"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/text_card_3_contribution"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_ranadada"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/card_VVMane"
+            app:cardElevation="10dp"
+            android:layout_marginTop="20dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/black_line"
+                    android:id="@+id/black_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/political_contribution"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/text_heading4"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_heading4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:contentDescription="@string/rana_jagjithsinha_patil_profile"
+                        android:layout_height="120dp"
+                        android:src="@drawable/rana_dada"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/image_profile_card_4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dr_rana_jagjithsinha_patil"
+                        android:layout_toEndOf="@id/image_profile_card_4"
+                        android:layout_marginStart="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/card_4_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rana_dada_details"
+                        android:id="@+id/text_position_4"
+                        android:layout_toEndOf="@id/image_profile_card_4"
+                        android:layout_marginTop="05dp"
+                        android:layout_below="@id/card_4_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:layout_marginStart="15dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_collector"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/card_ranadada"
+            app:cardElevation="10dp"
+            android:layout_marginTop="20dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/pink_line"
+                    android:id="@+id/pink_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/district_level_contribution"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/text_heading5"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_heading5"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:contentDescription="@string/kaustubh_diwegaonkar_profile"
+                        android:layout_height="120dp"
+                        android:src="@drawable/kaustubh_divegaonkar"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/image_profile_card_5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kaustubh_diwegawkar"
+                        android:layout_toEndOf="@id/image_profile_card_5"
+                        android:layout_marginStart="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/card_5_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kaustubh_diwegaonkar_details"
+                        android:id="@+id/text_position_5"
+                        android:layout_toEndOf="@id/image_profile_card_5"
+                        android:layout_marginTop="05dp"
+                        android:layout_below="@id/card_5_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:layout_marginStart="15dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

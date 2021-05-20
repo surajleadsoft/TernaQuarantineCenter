@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdvancedSearchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/advanced_search"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_heading_advanced_search"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/text_heading_advanced_search"
+        android:layout_marginTop="5dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_heading_advanced_search"
+        android:layout_marginTop="20dp"
+        android:id="@+id/spinner_by"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item"
+        android:background="@drawable/spinner_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinner_by"
+        android:layout_marginTop="25dp"
+        android:id="@+id/recyclerViewAdvancedSearch"
+        tools:listitem="@layout/custom_patients_list"/>
+
+</RelativeLayout>

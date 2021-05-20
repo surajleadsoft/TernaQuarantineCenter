@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog_relative_layout"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_tests"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_test_custom_layout"
+        android:layout_below="@id/text_tests"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_tests_done"
+            android:id="@+id/text_custom_test"
+            android:completionThreshold="0"
+            android:dropDownHeight="170dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

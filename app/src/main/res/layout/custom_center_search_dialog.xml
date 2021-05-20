@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_provide_details"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/text_center_dialog_heading"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_center_dialog_heading"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_background"
+        android:id="@+id/spinner_center_type"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_center_type"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_background"
+        android:id="@+id/spinner_center"/>
+
+
+</RelativeLayout>
